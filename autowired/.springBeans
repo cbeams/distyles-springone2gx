@@ -8,6 +8,7 @@
 	<enableImports><![CDATA[true]]></enableImports>
 	<configs>
 		<config>src/main/java/com/bank/app/app-config.xml</config>
+		<config>src/test/java/com/bank/service/TransferServiceTests-context.xml</config>
 	</configs>
 	<configSets>
 		<configSet>
