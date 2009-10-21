@@ -3,9 +3,12 @@ package com.bank.repository;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Component;
+
 import com.bank.domain.Account;
 
 
+@Component
 public class InMemoryAccountRepository implements AccountRepository {
 	
 	public static class Data {

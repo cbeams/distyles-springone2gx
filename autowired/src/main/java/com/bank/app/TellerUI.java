@@ -1,21 +1,26 @@
 package com.bank.app;
 
 import static java.lang.System.err;
+
 import static java.lang.System.out;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import com.bank.domain.TransferConfirmation;
 import com.bank.service.TransferService;
 
+@Component
 public class TellerUI {
 	
 	private final TransferService transferService;
 
+	@Autowired
 	public TellerUI(TransferService transferService) {
 		this.transferService = transferService;
 	}
