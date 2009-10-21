@@ -3,6 +3,7 @@ package com.bank.service;
 import static java.lang.String.format;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -20,7 +21,8 @@ public class TransferServiceImpl implements TransferService {
 	private double minimumTransferAmount = 1.00;
 	
 	@Autowired
-	public TransferServiceImpl(AccountRepository accountRepository, FeePolicy feePolicy) {
+	public TransferServiceImpl(AccountRepository accountRepository,
+	                           @Qualifier("domestic") FeePolicy feePolicy) {
 		this.accountRepository = accountRepository;
 		this.feePolicy = feePolicy;
 	}
