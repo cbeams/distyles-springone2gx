@@ -8,8 +8,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class TellerBootstrap {
 
 	public static void main(String... args) throws IOException {
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("com/bank/app/app-config.xml");
-		TellerUI tellerUI = (TellerUI) ctx.getBean("tellerUI");
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("app-config.xml", TellerBootstrap.class);
+		TellerUI tellerUI = ctx.getBean(TellerUI.class);
 		tellerUI.start();
 	}
 
