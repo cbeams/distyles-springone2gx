@@ -1,11 +1,10 @@
 package com.bank.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Qualifier("domestic")
+@Domestic
 @Component
 public class FlatFeePolicy implements FeePolicy {
 

@@ -3,7 +3,6 @@ package com.bank.service;
 import static java.lang.String.format;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -22,7 +21,7 @@ public class TransferServiceImpl implements TransferService {
 	
 	@Autowired
 	public TransferServiceImpl(AccountRepository accountRepository,
-	                           @Qualifier("domestic") FeePolicy feePolicy) {
+	                           @Domestic FeePolicy feePolicy) {
 		this.accountRepository = accountRepository;
 		this.feePolicy = feePolicy;
 	}
