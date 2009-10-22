@@ -2,18 +2,23 @@ package com.bank.service;
 
 import static java.lang.String.format;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
 import com.bank.domain.Account;
 import com.bank.domain.InsufficientFundsException;
 import com.bank.domain.TransferConfirmation;
 import com.bank.repository.AccountRepository;
 
 
+@Named
 public class TransferServiceImpl implements TransferService {
 	
 	private final AccountRepository accountRepository;
 	private final FeePolicy feePolicy;
 	private double minimumTransferAmount = 1.00;
 	
+	@Inject
 	public TransferServiceImpl(AccountRepository accountRepository, FeePolicy feePolicy) {
 		this.accountRepository = accountRepository;
 		this.feePolicy = feePolicy;

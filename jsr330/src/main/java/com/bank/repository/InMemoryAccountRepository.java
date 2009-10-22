@@ -3,9 +3,12 @@ package com.bank.repository;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.inject.Named;
+
 import com.bank.domain.Account;
 
 
+@Named
 public class InMemoryAccountRepository implements AccountRepository {
 	
 	public static class Data {
