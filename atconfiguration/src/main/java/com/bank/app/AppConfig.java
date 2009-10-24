@@ -14,8 +14,8 @@ import com.bank.service.TransferServiceImpl;
 @Configuration
 public class AppConfig {
 	
-	@Value("${flatfee.policy") 
-	private double flatFeePolicy;
+	@Value("${flatfee.amount}") 
+	private double flatFeeAmount;
 	
 	@Bean
 	public TellerUI tellerUI() {
@@ -30,11 +30,12 @@ public class AppConfig {
 
 	@Bean
 	public FeePolicy feePolicy() {
-		return new FlatFeePolicy(flatFeePolicy);
+		return new FlatFeePolicy(flatFeeAmount);
 	}
 
 	@Bean
 	public AccountRepository accountRepository() {
 		return new InMemoryAccountRepository();
 	}
+	
 }
