@@ -42,8 +42,8 @@
 				<excludes>
 					<exclude>**/*.java</exclude>
 				</excludes>
-				</resource>
-			</resources>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
