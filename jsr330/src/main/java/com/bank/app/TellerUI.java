@@ -7,15 +7,20 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
 import org.springframework.util.StringUtils;
 
 import com.bank.domain.TransferConfirmation;
 import com.bank.service.TransferService;
 
+@Named
 public class TellerUI {
 	
 	private final TransferService transferService;
 
+	@Inject
 	public TellerUI(TransferService transferService) {
 		this.transferService = transferService;
 	}
