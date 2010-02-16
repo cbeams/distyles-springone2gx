@@ -15,7 +15,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>org.springframework.context</artifactId>
-			<version>3.0.0.BUILD-SNAPSHOT</version>
+			<version>3.0.0.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
