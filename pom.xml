@@ -22,6 +22,8 @@
 		<module>jsr330</module>
 		<module>atconfiguration</module>
 		<module>groovy</module>
+		<module>properties</module>
+		<module>types</module>
 	</modules>
 	<build>
 		<resources>

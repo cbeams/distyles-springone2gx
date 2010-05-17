@@ -17,18 +17,18 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>org.springframework.context</artifactId>
-			<version>3.0.0.RELEASE</version>
+			<artifactId>spring-context</artifactId>
+			<version>3.0.2.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.grails</groupId>
 			<artifactId>grails-spring</artifactId>
-			<version>1.1.1</version>
+			<version>1.2.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.grails</groupId>
 			<artifactId>grails-web</artifactId>
-			<version>1.1.1</version>
+			<version>1.2.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>

@@ -8,11 +8,11 @@
 		<artifactId>parent</artifactId>
 		<version>1.0.0.SNAPSHOT</version>
 	</parent>
-	<artifactId>atconfiguration</artifactId>
+	<artifactId>properties</artifactId>
 	<packaging>jar</packaging>
-	<name>DI Styles: @Configuration</name>
+	<name>DI Styles: Properties</name>
 	<description>
-		This project demonstrates the @Configuration style of dependency injection
+		This project demonstrates the XML style of dependency injection
 	</description>
 	<dependencies>
 		<dependency>
@@ -24,11 +24,6 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>3.0.2.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>cglib</groupId>
-			<artifactId>cglib-nodep</artifactId>
-			<version>2.2</version>
 		</dependency>
 	</dependencies>
 </project>
